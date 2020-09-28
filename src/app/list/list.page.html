@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of data">
+    <ion-card-header>
+      <ion-card-subtitle>{{ item.login }}</ion-card-subtitle>
+      <ion-card-title>{{ item.url }}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <img src="{{ item.avatar_url}}" alt="">
+    </ion-card-content>
+  </ion-card>
+</ion-content>
